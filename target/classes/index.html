@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="index.js" type="text/javascript"></script>
+</head>
+<body>
+
+
+<div id="ac-wrapper">
+  <div id="popup">
+   <button class="close" onclick="closePopUp()">Okay</button>  
+  </div>
+</div>
+
+<div class="container">
+  <img id="img" class="mySlides" src="http://localhost:8080/image/first.jpg"
+  style="width:100%">
+<div id="details" class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">Birthday Quizzz</h2>
+  <p class="w3-opacity"><i>Quarantine Birthday Celebration</i></p>
+  <p class="w3-justify">All you need to do is keep answering the questions asked and at the end you will get your present.</p>
+  <p class="w3-justify"><b>1.</b> Type in the answer and send it.</p>
+  <p class="w3-justify"><b>2.</b> I will check the answer and if its right you will get next question</p>
+  <p class="w3-justify"><b>3.</b> If you answer correctly the your image will get changed and next question will be at the bottom</p>  
+</div>
+</div>
+
+<div class=" w3-container w3-center w3-content " style="max-width:600px" id='entry'>
+    <h2 id="h" class="w3-wide">First Question</h2>
+    <p class="w3-opacity"><i>An easy question</i></p>
+    <h4 id="q" class="w3-center"><i>_____, Bharathi is an Idiot?</i>(Answers in "Yes" or "No" only) </h4>
+    <input type="radio" class="message_pri" name="message_pri" value="Yes" onclick="document.getElementById('send').removeAttribute('disabled')"/>
+    <label >Yes</label>
+    <input type="radio" class="message_pri" name="message_pri" value="No" onclick="document.getElementById('send').removeAttribute('disabled')" />
+    <label >No</label>
+    <input id="send" type="submit" value="SEND" disabled onclick="myFunction()"/>
+</div>
+<div class=" w3-container w3-center w3-content hide" style="max-width:600px" id='next'>
+  <h2 id="h" class="w3-wide">First Question</h2>
+  <h4 id="q1" style="font-style: italic" class="w3-center">, Bharathi is an Idiot?</h4>
+  <input id="v1"type="radio" class="message_pri" name="message_pri"  onclick="document.getElementById('send1').removeAttribute('disabled')"/>
+  <label id="o1"></label></br>
+  <input id="v2"type="radio" class="message_pri" name="message_pri"  onclick="document.getElementById('send1').removeAttribute('disabled')"/>
+  <label id="o2"></label></br>
+  <input id="v3"type="radio" class="message_pri" name="message_pri"  onclick="document.getElementById('send1').removeAttribute('disabled')"/>
+  <label id="o3"></label></br>
+  <input id="send1" type="submit" value="SEND" disabled onclick="myFunction()"/>
+</div>
+<div id="video" class="hide w3-center ">
+<iframe Style="width: 900px; height: 506px;"  src="https://www.youtube.com/embed/UTetxq-kSc8" frameborder="0" allowfullscreen></iframe>
+  </div>>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://twitter.com/yadavharichara1"><i class="fa fa-twitter"></i></a>
+  <a href="http://linkedin.com/in/durgam-hari-charan-yadav-04898012b"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.instagram.com/yadavharicharan/"><i class="fa fa-instagram"></i></a>
+  <p class="w3-medium">
+  Powered by <a href="images/life.jpg" target="_blank">a StuPid!!</a>
+  </p>
+</footer>
+</body>
+</html>
