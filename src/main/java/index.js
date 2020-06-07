@@ -1,5 +1,6 @@
 function myFunction(){
     if($('#next #h').html().includes("Eighth")){
+        window.scrollTo(0,0);
         if($(".message_pri:checked").val() == "Flying"){
             $('#text').html("You will most probably crash into a plane and die.");
             
@@ -17,6 +18,7 @@ function myFunction(){
         $('#video').show();
     }
     else{
+        $('#text1').html("Note: Sorry for inconvinence...Dont close the pop-up till background image changes(apx:10secs)");
         if($('#next #h').html().includes("First")){
             if($(".message_pri:checked").val() == "Yes"){
                 $('#text').html("Yes!, Bharathi is an Big Idiot!!!!!!!.");
@@ -32,7 +34,7 @@ function myFunction(){
             $('#text').html("Awwwhhhhh I'll tell "+ $(".message_pri:checked").val()+", that you hate her");
         }
         else if($('#next #h').html().includes("Fourth")){
-            $('#text').html("I'll tell your parents that you want"+ $(".message_pri:checked").val());
+            $('#text').html("I'll tell your parents that you want "+ $(".message_pri:checked").val());
         }
         else if($('#next #h').html().includes("Fifth")){
             if($(".message_pri:checked").val() == "My Brain"){
@@ -88,7 +90,7 @@ function sendAnswer() {
     var str = $('#next #h').html();
     $.ajax({
         type : 'POST',
-          url : 'http://localhost:8080/sendAnswer',
+          url : '/sendAnswer',
           dataType : 'json',
           contentType: 'application/json; charset=utf-8',
 

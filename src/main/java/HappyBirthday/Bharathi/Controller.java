@@ -99,7 +99,7 @@ public class Controller {
             res.setOption1("Niharika");
             res.setOption2("Lasya");
             res.setOption3("Akhil");
-            res.setImage("http://localhost:8080/image/second.PNG");
+            res.setImage("/image/second.PNG");
             return res;
         }
         else if(request.getQuestionNumber().equals("Second")) {
@@ -109,7 +109,7 @@ public class Controller {
             res.setOption1("Niharika");
             res.setOption2("Lasya");
             res.setOption3("Peddireddy");
-            res.setImage("http://localhost:8080/image/third.JPG");
+            res.setImage("/image/third.JPG");
             return res;
         }
         else if(request.getQuestionNumber().equals("Third")) {
@@ -119,7 +119,7 @@ public class Controller {
             res.setOption1("To Do Drugs");
             res.setOption2("To Drink Alcohol");
             res.setOption3("To have Boyfriend");
-            res.setImage("http://localhost:8080/image/fourth.jpg");
+            res.setImage("/image/fourth.png");
             return res;
         }
         else if(request.getQuestionNumber().equals("Fourth")) {
@@ -129,7 +129,7 @@ public class Controller {
             res.setOption1("My Brain");
             res.setOption2("My Attitude");
             res.setOption3("My Life");
-            res.setImage("http://localhost:8080/image/fifth.PNG");
+            res.setImage("/image/fifth.PNG");
             return res;
         }
         else if(request.getQuestionNumber().equals("Fifth")) {
@@ -139,7 +139,7 @@ public class Controller {
             res.setOption1("A kiss from someone SPECIAL!");
             res.setOption2("To Kill someone");
             res.setOption3("To Marry someone SPECIAL!");
-            res.setImage("http://localhost:8080/image/sixth.JPG");
+            res.setImage("/image/sixth.JPG");
             return res;
         }
         else if(request.getQuestionNumber().equals("Sixth")) {
@@ -149,7 +149,7 @@ public class Controller {
             res.setOption1("Niharika");
             res.setOption2("Lasya");
             res.setOption3("Yourself(as girl)");
-            res.setImage("http://localhost:8080/image/seventh.PNG");
+            res.setImage("/image/seventh.PNG");
             return res;
         }
         else  if(request.getQuestionNumber().equals("Seventh")) {
@@ -159,7 +159,7 @@ public class Controller {
             res.setOption1("Flying");
             res.setOption2("Invisibility");
             res.setOption3("Speed");
-            res.setImage("http://localhost:8080/image/eighth.JPG");
+            res.setImage("/image/eighth.JPG");
             return res;
         }
         else {

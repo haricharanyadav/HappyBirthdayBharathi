@@ -243,7 +243,7 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
     #popup{
     width: 400px;
     height: 525px;
-    background-image: url('http://localhost:8080/image/Party.JPG');
+    background-image: url('/image/Party.JPG');
     background-size: 400px 475px;
     background-color: white;
     border: 5px solid #000;
